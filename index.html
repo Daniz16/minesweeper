@@ -8,7 +8,7 @@
     <title>Sprint - Mine Sweeper!</title>
 </head>
 
-<body onload="init(4)">
+<body onload="initGame()">
 
     <h1 class="title">MINE SWEEPER</h1>
 
@@ -20,13 +20,25 @@
     </div>
 
     <div class="btns">
-        <button onclick="init(4)">EASY</button>
+        <button onclick="setLevel({
+            size: 4,
+            mines: 2,
+        
+        })">EASY</button>
 
 
-        <button onclick="init(8)">MEDIUM</button>
+        <button onclick="setLevel({
+            size: 8,
+            mines: 12,
+        
+        })">MEDIUM</button>
 
 
-        <button onclick="init(12)">HARD</button>
+        <button onclick="setLevel({
+            size: 12,
+            mines: 30,
+        
+        })">HARD</button>
 
     </div>
 
@@ -38,7 +50,7 @@
 
 
     <div class="bottomgame">
-        <span class="timer">Time : </span>
+        <span class="timer">Time 0:00.00 </span>
         <span class="score">Score : <span>0</span> </span>
 
     </div>
@@ -46,7 +58,11 @@
 
 
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/second.js"></script>
+
+
+
 </body>
 
 </html>
