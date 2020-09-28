@@ -1,62 +1,140 @@
 body {
-    background-color: PALEGOLDENROD;
+    background-color:CADETBLUE;
+
+
 
 }
 .title{
     color: FIREBRICK;
+    font-size: 40px;
+    word-spacing: 7px;
+
+    -webkit-text-stroke: 2px #000000;
     text-align: center;
+    margin-top: 20px;
+    font-family: fantasy
+
+
+}
+.sweeper{
+    
+    font-family: fantasy;
+    font-size: 40px;
+    color: yellow;
+    -webkit-text-stroke: 2px #000000;
+
+}
+.gameover{
+    font-size: 23px;
+    color: FIREBRICK;
+    -webkit-text-stroke: 1px #000000;
+    text-decoration: overline underline  black;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.restart{
+
+    color: black;
+    text-align: center;
+    margin: auto;
     margin-top: 30px;
+    background-color:rgb(223, 223, 59);
+    border-color: black;
+    border: 2px solid;
+    display: none;
+
+}
+.restart:hover{
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center; 
+    box-shadow:  12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    font-weight: bold;
 
 }
 .topgame{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    border: solid rgb(39, 39, 160) 3px;
     width: 400px;
 
 }
 .smiley{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-
-}
-.bottomgame{
-    border: solid rgb(39, 39, 160) 3px;
     margin: auto;
-    margin-top: 80px;
-    padding-bottom: 35px;
-    padding-top: 15px;
-    width: 400px;
-
+    font-size: 30px; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-left: 175px;
 
 }
-
-.timer{
-    font-size: 20px;
-    border: blue solid;
-    padding-right: 30px;
-    float: right;
-} 
-.score{
-    font-size: 20px;
-    text-align: center; 
-    border: blue solid;
-    padding-right: 30px;
-    float: left;
-
-} 
-.btns:hover{
+.smiley:hover{
     cursor: pointer;
 
 }
-.btns{
+.timer{
+    border-color: black;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center; 
+    font-weight: bold;
+    
+} 
+.bestTime{
+    margin: auto;
+    margin-top: 19px;
+    font-size: 20px;
+    text-align: center; 
+    font-weight: bold;
+   
+} 
+.levels{
+    margin: auto;
+    text-align: center; 
+
+}
+.butns{
+    background-color: rgb(241, 195, 154);
+    border-color: black;
+    border: 2px solid;
+
+}
+.butns:hover{
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center; 
+    background-color: PEACHPUFF; 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    font-weight: bold;
+
+}
+.txtsafe{
+    text-align:center;
+    margin-top :30px;
+    font-size: 14.5px;
+
+}
+.safe{
     margin: auto;
     text-align: center;
-    vertical-align: middle;
-    font-size: 25px;
+    
+}
+.safebtn{
+
+    background-color: CADETBLUE ;
+    border-color: black;
+    border: 3px , solid;
+    font-size: 16px; 
+    width: 100px;
+    height: 30px;
+    
+}
+.safebtn:hover{
+    cursor: pointer;
+    background-color: rgb(207, 205, 68);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    font-weight: bold;
 
 }
 .container{
@@ -67,27 +145,40 @@ body {
     width: auto;
     border-radius: 7px;
     color: #284de0;
-    width: 300px;
-    height: 300px;
-
+    
 }
-
 table{ 
-    height: 400px; 
-    width: 400px;
     background-color: wheat; 
     margin: auto;
     border: 3px solid black;
-    margin-bottom: 10px;
-} 
 
+} 
 .square{
 
-    width: 40px; 
-    height: 40px;
-    color: teal;
+    width: 30px; 
+    height: 30px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     border:  2px solid black;
 
+}
+.square:hover{
+    cursor: pointer;
+
+}
+.shown{
+    background-color: rgb(224, 188, 120);
+
+}
+.hearts{
+
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border:  2px solid black;
+    font-size: 20px; 
+    margin-top: 20px; 
+    width: 100px;
+    height: 30px;
+  
 }

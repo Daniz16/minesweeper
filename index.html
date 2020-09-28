@@ -10,31 +10,31 @@
 
 <body onload="initGame()">
 
-    <h1 class="title">MINE SWEEPER</h1>
+    <h1 class="title">MINE <span class="sweeper"> SWEEPER</span> </h1>
+
+    <h3 class="gameover"></h3>
 
     <div class="topgame">
-        <p class="smiley">&#x1F603;</p>
-        <!-- //לשים חיים
-        //לשים רמזים  -->
-
+        <p onclick="initGame()" class="smiley">😃</p>
+    
     </div>
 
-    <div class="btns">
-        <button onclick="setLevel({
+    <div class="levels">
+        <button class="butns" onclick="setLevel({
             size: 4,
             mines: 2,
         
         })">EASY</button>
 
 
-        <button onclick="setLevel({
+        <button class="butns" onclick="setLevel({
             size: 8,
             mines: 12,
         
         })">MEDIUM</button>
 
 
-        <button onclick="setLevel({
+        <button class="butns" onclick="setLevel({
             size: 12,
             mines: 30,
         
@@ -42,24 +42,21 @@
 
     </div>
 
-
-
+    <div class="txtsafe"> <p> Safe clicks </p>  </div>
+    <div class="safe"> <button onclick="safeClick()" class="safebtn">💊 💊 💊</button> </div>
 
     <div class="container"></div>
 
+    <div class="hearts"> ❤️ ❤️ ❤️ </div>
 
+    <div class="timer"></div>
 
-    <div class="bottomgame">
-        <span class="timer">Time 0:00.00 </span>
-        <span class="score">Score : <span>0</span> </span>
-
-    </div>
+    <div class="bestTime"></div>
 
 
 
 
-    <!-- <script src="js/main.js"></script> -->
-    <script src="js/second.js"></script>
+    <script src="js/main.js"></script>
 
 
 
